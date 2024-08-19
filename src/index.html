@@ -2,26 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Homework 11</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <script type="module" src="./js/pixabay-api.js"></script>
-    <script type="module" src="./js/render-functions.js"></script>
-    <script type="module" src="./main.js"></script>
   </head>
   <body>
-    <section class="galery-section">
-      <div class="container">
-        <form class="search-form js-search-form">
-          <input
-            class="search-input js-search-input"
-            type="text"
-            name="user_query"
-          />
-          <button class="search-btn" type="submit">ПОШУК</button>
-        </form>
-        <ul class="gallary js-gallary"></ul>
-      </div>
-    </section>
+    <div class="container">
+      <form class="search-form">
+        <input
+          type="text"
+          name="search"
+          class="search-input"
+          placeholder="Search images..."
+        />
+        <button type="submit" class="submit-btn">Search</button>
+      </form>
+      <span class="loader visually-hidden"></span>
+      <ul class="gallery"></ul>
+    </div>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
